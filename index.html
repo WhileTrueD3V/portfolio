@@ -3,86 +3,71 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Portfolio of four shipped projects: an escape-room site with paying users, an iOS app, a macOS desktop pet, and a Java text adventure.">
-<meta property="og:title" content="Dash Brier - Four Things I Shipped">
-<meta property="og:description" content="Escape The Website, GREMLIN, Bitlings, SUPER GAMMY 110. Built for ETHGlobal Tokyo.">
+<meta name="description" content="Dash - junior in high school, based in Tokyo, looking to join a team for ETHGlobal Tokyo.">
+<meta property="og:title" content="Dash - Looking for a Team">
+<meta property="og:description" content="Junior in high school, based in Tokyo. Interested in AI, agents, games and design.">
 <meta property="og:type" content="website">
 <style>*{margin:0;padding:0}img,canvas{max-width:100%}</style>
-<title>Four Things I Shipped</title>
+<title>Looking for a Team</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,300..600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,300..600&display=swap">
 
 <style>
   :root {
-    --bg:        #EFEFEA;
-    --surface:   #F9F9F6;
-    --ink:       #15171D;
-    --ink-2:     #4C5160;
-    --ink-3:     #7C8194;
-    --rule:      #D7D7CF;
-    --rule-soft: #E4E4DC;
-    --accent:    #2233CC;
-    --accent-2:  #5C6BE8;
+    --bg:         #EFEFEA;
+    --surface:    #F9F9F6;
+    --ink:        #15171D;
+    --ink-2:      #4C5160;
+    --ink-3:      #7C8194;
+    --rule:       #D9D9D1;
+    --rule-soft:  #E5E5DD;
+    --accent:     #2233CC;
     --accent-wash:#E2E4F7;
-    --live:      #0F6340;
-    --live-wash: #DBEDE3;
-    --pending:   #8A5400;
+    --live:       #0F6340;
+    --live-wash:  #DBEDE3;
+    --pending:    #8A5400;
     --pending-wash:#F3E8D2;
-    --quiet:     #5C6070;
-    --quiet-wash:#E4E4DD;
-    --pix-eye:   #F9F9F6;
-    --pix-blush: #E0725A;
-
-    --step-0: 1rem;
-    --step-1: 1.1rem;
-    --step-2: 1.35rem;
-    --step-3: 1.9rem;
-    --step-4: clamp(2.6rem, 6vw, 4.4rem);
+    --quiet:      #5C6070;
+    --quiet-wash: #E4E4DD;
   }
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg:        #0D0F14;
-      --surface:   #14171E;
-      --ink:       #E9E9E4;
-      --ink-2:     #A2A8B8;
-      --ink-3:     #757B8C;
-      --rule:      #272C37;
-      --rule-soft: #1D212A;
-      --accent:    #8F9BFF;
-      --accent-2:  #B3BBFF;
+      --bg:         #0D0F14;
+      --surface:    #14171E;
+      --ink:        #E9E9E4;
+      --ink-2:      #A2A8B8;
+      --ink-3:      #757B8C;
+      --rule:       #272C37;
+      --rule-soft:  #1E222B;
+      --accent:     #8F9BFF;
       --accent-wash:#1B2040;
-      --live:      #5FCB99;
-      --live-wash: #0F2A1F;
-      --pending:   #E0B35C;
+      --live:       #5FCB99;
+      --live-wash:  #0F2A1F;
+      --pending:    #E0B35C;
       --pending-wash:#2A2113;
-      --quiet:     #949AAA;
-      --quiet-wash:#1C1F27;
-      --pix-eye:   #0D0F14;
-      --pix-blush: #E0725A;
+      --quiet:      #949AAA;
+      --quiet-wash: #1C1F27;
     }
   }
 
   :root[data-theme="dark"] {
-    --bg:        #0D0F14;
-    --surface:   #14171E;
-    --ink:       #E9E9E4;
-    --ink-2:     #A2A8B8;
-    --ink-3:     #757B8C;
-    --rule:      #272C37;
-    --rule-soft: #1D212A;
-    --accent:    #8F9BFF;
-    --accent-2:  #B3BBFF;
+    --bg:         #0D0F14;
+    --surface:    #14171E;
+    --ink:        #E9E9E4;
+    --ink-2:      #A2A8B8;
+    --ink-3:      #757B8C;
+    --rule:       #272C37;
+    --rule-soft:  #1E222B;
+    --accent:     #8F9BFF;
     --accent-wash:#1B2040;
-    --live:      #5FCB99;
-    --live-wash: #0F2A1F;
-    --pending:   #E0B35C;
+    --live:       #5FCB99;
+    --live-wash:  #0F2A1F;
+    --pending:    #E0B35C;
     --pending-wash:#2A2113;
-    --quiet:     #949AAA;
-    --quiet-wash:#1C1F27;
-    --pix-eye:   #0D0F14;
-    --pix-blush: #E0725A;
+    --quiet:      #949AAA;
+    --quiet-wash: #1C1F27;
   }
 
   * { box-sizing: border-box; }
@@ -91,315 +76,222 @@
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-    font-size: var(--step-1);
-    line-height: 1.6;
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.08rem;
+    line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
 
   .wrap {
-    max-width: 1140px;
+    max-width: 880px;
     margin: 0 auto;
-    padding: 0 28px 96px;
+    padding: 0 28px 100px;
   }
-
-  /* ---------- shared atoms ---------- */
 
   .eyebrow {
-    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
     font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--ink-3);
-    margin: 0;
+    margin: 0 0 18px;
   }
 
-  .chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
-    font-size: 0.68rem;
-    font-weight: 500;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    padding: 5px 10px;
-    border-radius: 4px;
-    white-space: nowrap;
-  }
-  .chip::before {
-    content: "";
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: currentColor;
-  }
-  .chip.is-live    { color: var(--live);    background: var(--live-wash); }
-  .chip.is-pending { color: var(--pending); background: var(--pending-wash); }
-  .chip.is-quiet   { color: var(--quiet);   background: var(--quiet-wash); }
-  .chip.is-quiet::before { opacity: 0.5; }
-
-  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-  a:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 3px;
-    border-radius: 2px;
-  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
 
   /* ---------- hero ---------- */
 
-  .hero {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 72px 0 40px;
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .hero-text { max-width: 30ch; }
+  .hero { padding: 88px 0 44px; }
 
   .hero h1 {
     font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
     font-variation-settings: "wdth" 118, "wght" 760;
-    font-size: var(--step-4);
-    line-height: 0.92;
-    letter-spacing: -0.025em;
-    margin: 14px 0 0;
-    text-wrap: balance;
+    font-size: clamp(3rem, 9vw, 5.4rem);
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+    margin: 0;
   }
 
-  .hero .lede {
-    margin: 18px 0 0;
-    font-size: var(--step-2);
+  .hero .who {
+    margin: 20px 0 0;
+    font-size: 1.32rem;
     line-height: 1.45;
     color: var(--ink-2);
+    max-width: 30ch;
+  }
+
+  .hero .ask {
+    margin: 22px 0 0;
+    font-size: 1.32rem;
+    line-height: 1.45;
     max-width: 34ch;
+    font-weight: 600;
   }
 
-  .hero-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 10px;
-    margin-top: 26px;
-    font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
-    font-size: 0.78rem;
-  }
-  .hero-links a {
-    padding: 7px 12px;
-    border: 1px solid var(--rule);
-    border-radius: 5px;
+  /* ---------- the note ---------- */
+
+  .note {
+    margin-top: 56px;
+    padding: 36px 38px;
     background: var(--surface);
-    text-decoration: none;
-    color: var(--ink-2);
-    transition: border-color .15s ease, color .15s ease, transform .15s ease;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
   }
-  .hero-links a:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    transform: translateY(-1px);
-  }
+  .note p { margin: 0 0 16px; max-width: 62ch; }
+  .note p:last-child { margin-bottom: 0; }
 
-  .pixel-stage {
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 6px;
-  }
-  .pixel-stage canvas {
-    display: block;
-    image-rendering: pixelated;
-  }
-  .pixel-stage .caption {
-    font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-3);
-  }
+  /* ---------- facts strip ---------- */
 
-  /* ---------- body grid ---------- */
-
-  .columns {
+  .facts {
     display: grid;
-    grid-template-columns: 268px 1fr;
-    gap: 72px;
-    padding-top: 52px;
-    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 56px;
+    padding-top: 40px;
+    border-top: 1px solid var(--rule);
   }
 
-  .rail { position: sticky; top: 36px; display: flex; flex-direction: column; gap: 34px; }
-
-  .rail section { display: flex; flex-direction: column; gap: 12px; }
-
-  .tally { display: flex; flex-direction: column; gap: 0; }
-  .tally div {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 12px;
-    padding: 9px 0;
-    border-bottom: 1px solid var(--rule-soft);
-    font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
-    font-size: 0.76rem;
-    color: var(--ink-3);
-  }
-  .tally b {
-    font-weight: 700;
-    font-size: 0.92rem;
-    color: var(--ink);
-    font-variant-numeric: tabular-nums;
-  }
-
-  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 7px; }
   .tags span {
     font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
-    font-size: 0.68rem;
-    padding: 4px 8px;
+    font-size: 0.72rem;
+    padding: 5px 10px;
     border: 1px solid var(--rule);
-    border-radius: 4px;
-    color: var(--ink-2);
-  }
-  .tags span.gap {
-    border-style: dashed;
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  .rail p {
-    margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.55;
+    border-radius: 5px;
     color: var(--ink-2);
   }
 
   /* ---------- projects ---------- */
 
-  .projects { display: flex; flex-direction: column; gap: 56px; }
-
-  .project {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    padding-bottom: 52px;
+  .section-head {
+    margin-top: 72px;
+    padding-bottom: 14px;
     border-bottom: 1px solid var(--rule);
   }
-  .project:last-child { border-bottom: 0; padding-bottom: 0; }
-
-  .project-head {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-
-  .project h2 {
+  .section-head h2 {
     font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
     font-variation-settings: "wdth" 112, "wght" 700;
-    font-size: var(--step-3);
+    font-size: 1.5rem;
     letter-spacing: -0.015em;
-    line-height: 1.05;
     margin: 0;
   }
+  .section-head p { margin: 6px 0 0; color: var(--ink-3); font-size: 0.98rem; }
 
-  .thesis {
-    font-size: var(--step-2);
-    line-height: 1.45;
-    margin: 0;
-    max-width: 44ch;
-    color: var(--ink);
-  }
+  .cards { display: flex; flex-direction: column; }
 
-  .specs {
+  .card {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1px;
-    background: var(--rule-soft);
-    border: 1px solid var(--rule-soft);
-    border-radius: 6px;
-    overflow: hidden;
-  }
-  .specs div {
-    background: var(--surface);
-    padding: 13px 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-  }
-  .specs dt, .specs .k {
-    font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-3);
-  }
-  .specs .v {
-    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
-    font-variation-settings: "wdth" 104, "wght" 640;
-    font-size: 1.12rem;
-    font-variant-numeric: tabular-nums;
-    color: var(--ink);
+    grid-template-columns: 1fr auto;
+    gap: 10px 28px;
+    align-items: baseline;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--rule-soft);
   }
 
-  .project p.detail {
+  .card h3 {
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    font-variation-settings: "wdth" 108, "wght" 680;
+    font-size: 1.22rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .card .desc {
+    grid-column: 1;
     margin: 0;
     color: var(--ink-2);
-    max-width: 68ch;
+    max-width: 56ch;
   }
 
-  .project .note {
-    margin: 0;
-    font-size: 0.93rem;
-    color: var(--ink-3);
-    max-width: 66ch;
-    padding-left: 14px;
-    border-left: 2px solid var(--accent-wash);
-  }
-
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
+  .card .go {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    align-self: center;
     font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
-    font-size: 0.78rem;
-  }
-  .links span { color: var(--ink-3); }
-
-  /* ---------- closing ---------- */
-
-  .closing {
-    margin-top: 80px;
-    padding: 38px 36px;
-    background: var(--surface);
+    font-size: 0.76rem;
+    text-decoration: none;
+    padding: 8px 14px;
     border: 1px solid var(--rule);
-    border-radius: 8px;
+    border-radius: 6px;
+    color: var(--ink-2);
+    white-space: nowrap;
+    transition: border-color .15s ease, color .15s ease;
+  }
+  .card .go:hover { border-color: var(--accent); color: var(--accent); }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding: 4px 9px;
+    border-radius: 4px;
+    margin-left: 10px;
+    vertical-align: 2px;
+  }
+  .chip::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+  .chip.is-live    { color: var(--live);    background: var(--live-wash); }
+  .chip.is-pending { color: var(--pending); background: var(--pending-wash); }
+  .chip.is-quiet   { color: var(--quiet);   background: var(--quiet-wash); }
+
+  /* ---------- work in progress ---------- */
+
+  .wip {
+    margin-top: 40px;
+    padding: 34px 38px;
+    background: var(--surface);
+    border: 1px dashed var(--rule);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    flex-wrap: wrap;
+  }
+  .wip-copy { flex: 1 1 300px; }
+  .wip h3 {
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    font-variation-settings: "wdth" 108, "wght" 680;
+    font-size: 1.22rem;
+    margin: 0;
+  }
+  .wip p { margin: 10px 0 0; color: var(--ink-2); max-width: 44ch; }
+
+  .pets { display: flex; gap: 6px; align-items: flex-end; flex: 0 0 auto; }
+  .pets canvas { display: block; image-rendering: pixelated; }
+
+  /* ---------- contact ---------- */
+
+  .contact { margin-top: 72px; padding-top: 40px; border-top: 1px solid var(--rule); }
+  .contact-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
-    justify-content: space-between;
-    align-items: flex-start;
+    gap: 10px;
+    margin-top: 6px;
+    font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
+    font-size: 0.82rem;
   }
-  .closing h2 {
-    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
-    font-variation-settings: "wdth" 112, "wght" 700;
-    font-size: var(--step-2);
-    margin: 10px 0 0;
-    letter-spacing: -0.01em;
+  .contact-links a {
+    padding: 9px 15px;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    background: var(--surface);
+    text-decoration: none;
+    color: var(--ink-2);
+    transition: border-color .15s ease, color .15s ease, transform .15s ease;
   }
-  .closing p { margin: 10px 0 0; color: var(--ink-2); max-width: 46ch; }
-  .closing .col { flex: 1 1 260px; }
+  .contact-links a:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
 
-  @media (max-width: 900px) {
-    .columns { grid-template-columns: 1fr; gap: 48px; }
-    .rail { position: static; }
-    .hero { flex-direction: column; align-items: flex-start; padding-top: 48px; }
-    .pixel-stage { align-items: flex-start; order: -1; }
-    .specs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
-  @media (max-width: 460px) {
-    .specs { grid-template-columns: 1fr; }
+  @media (max-width: 680px) {
+    .facts { grid-template-columns: 1fr; gap: 32px; }
+    .card { grid-template-columns: 1fr; }
+    .card .go { grid-row: auto; grid-column: 1; justify-self: start; margin-top: 6px; }
+    .note { padding: 28px 24px; }
+    .wip { padding: 26px 24px; gap: 24px; }
+    .hero { padding-top: 60px; }
   }
 </style>
 
@@ -408,224 +300,169 @@
 <div class="wrap">
 
   <header class="hero">
-    <div class="hero-text">
-      <p class="eyebrow">Portfolio &middot; ETHGlobal Tokyo</p>
-      <h1>Dash Brier</h1>
-      <p class="lede">I build and ship consumer products end&#8209;to&#8209;end &mdash; puzzle games, an iOS app, a desktop pet. Three of the four below are running right now.</p>
-      <nav class="hero-links">
-        <a href="https://github.com/WhileTrueD3V">github.com/WhileTrueD3V</a>
-        <a href="mailto:dashbrier@gmail.com">dashbrier@gmail.com</a>
-        <a href="https://www.escapethewebsite.com">escapethewebsite.com</a>
-      </nav>
-    </div>
-    <div class="pixel-stage">
-      <canvas id="pet" width="96" height="96" aria-label="A pixel-art creature from Bitlings, idling" role="img"></canvas>
-      <span class="caption">Bitlings &middot; live canvas</span>
-    </div>
+    <p class="eyebrow">ETHGlobal Tokyo</p>
+    <h1>Dash</h1>
+    <p class="who">Junior in high school, based in Tokyo.</p>
+    <p class="ask">I'm hoping to join a team for the hackathon.</p>
   </header>
 
-  <div class="columns">
+  <section class="note">
+    <p>I'm very interested in AI, agents, games, design, and user attractiveness overall. I've been doing a lot of vibe&#8209;coding recently &mdash; you can check out some of my things below.</p>
+    <p>I have some experience in Java, CSS, HTML and Python, along with a few other tools that help me build projects, but I'm looking to learn more and experience the process of making something cool.</p>
+    <p>I'm happy to join any team. Please let me know if you'd be open to that.</p>
+  </section>
 
-    <aside class="rail">
-      <section>
-        <p class="eyebrow">By the numbers</p>
-        <div class="tally">
-          <div><span>Shipped projects</span><b>4</b></div>
-          <div><span>Commits</span><b>2,200+</b></div>
-          <div><span>Lines of app code</span><b>155k</b></div>
-          <div><span>Languages shipped</span><b>EN / &#26085;&#26412;&#35486;</b></div>
-          <div><span>Paying customers</span><b>Yes</b></div>
-        </div>
-      </section>
-
-      <section>
-        <p class="eyebrow">Stack I've shipped in</p>
-        <div class="tags">
-          <span>TypeScript</span><span>React 19</span><span>Next.js 16</span>
-          <span>Tailwind v4</span><span>Supabase</span><span>Postgres</span>
-          <span>Stripe</span><span>Capacitor / iOS</span><span>Electron</span>
-          <span>Java</span><span>Vercel</span><span>Gemini API</span>
-          <span class="gap">Solidity &mdash; not yet</span>
-        </div>
-      </section>
-
-      <section>
-        <p class="eyebrow">What I'm after</p>
-        <p>I've never written a smart contract. Everything above is product, frontend, payments and shipping &mdash; the parts of a hackathon build that usually get rushed in the last four hours. Pair me with someone who owns the contracts and I'll own everything the judges actually look at.</p>
-      </section>
-
-      <section>
-        <p class="eyebrow">Based in</p>
-        <p>Tokyo. One of my products ships fully in Japanese &mdash; every room, not just the wrapper &mdash; so localization isn't an afterthought for me.</p>
-      </section>
-    </aside>
-
-    <main class="projects">
-
-      <article class="project">
-        <div class="project-head">
-          <h2>Escape The Website</h2>
-          <span class="chip is-live">Live &middot; paying users</span>
-        </div>
-        <p class="thesis">31 browser escape rooms that impersonate real websites closely enough that players forget they're inside a puzzle.</p>
-        <div class="specs">
-          <div><span class="k">Rooms</span><span class="v">31</span></div>
-          <div><span class="k">Commits</span><span class="v">1,126</span></div>
-          <div><span class="k">App code</span><span class="v">121,240</span></div>
-          <div><span class="k">Since</span><span class="v">Mar 2026</span></div>
-        </div>
-        <p class="detail">Next.js 16 / React 19 / Tailwind v4 on Vercel, Supabase for auth and Postgres, Stripe for one&#8209;off unlocks and subscriptions. Monthly tournaments with server&#8209;side timing, global leaderboards, a corporate event&#8209;hosting mode, and a complete Japanese edition of all 31 rooms. Rooms rebuild the real thing &mdash; layout, logo, product data &mdash; then hide the puzzle inside it.</p>
-        <p class="note">There's no test suite and no staging database, so the deploy gate is 27 custom check scripts I wrote as bugs taught me what to guard: room-key collisions, untranslated Japanese pages, ISR write budget, Stripe price drift, hint coverage. <code>npm run check</code> has to pass before anything ships.</p>
-        <div class="links">
-          <a href="https://www.escapethewebsite.com">escapethewebsite.com</a>
-          <span>Private repo &mdash; happy to walk through it on a call</span>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-head">
-          <h2>GREMLIN</h2>
-          <span class="chip is-pending">In App Store review</span>
-        </div>
-        <p class="thesis">An anti&#8209;doomscroll iOS app that locks your feed until you finish a challenge it wrote for you five seconds ago.</p>
-        <div class="specs">
-          <div><span class="k">Challenge types</span><span class="v">10</span></div>
-          <div><span class="k">Commits</span><span class="v">861</span></div>
-          <div><span class="k">App code</span><span class="v">20,849</span></div>
-          <div><span class="k">Since</span><span class="v">Jun 2026</span></div>
-        </div>
-        <p class="detail">A Next.js app wrapped with Capacitor for native iOS. Gemini 2.5 Flash Lite generates ten kinds of challenge on demand &mdash; trivia, riddles, physical dares, writing prompts &mdash; with dedup so you never get served the same one twice. Native push and local notifications, haptics, streaks, a shield&#8209;and&#8209;bank economy, a shop, and PostHog plus TelemetryDeck for analytics.</p>
-        <p class="note">Currently in its fourth round with App Review under Guideline 1.1. Shipping to testers through TestFlight in the meantime. I'm including it because getting a native app through Xcode, entitlements, push certificates and App Review taught me more than the code did.</p>
-        <div class="links">
-          <a href="https://getgremlin.app">getgremlin.app</a>
-          <span>Private repo &middot; TestFlight build available</span>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-head">
-          <h2>Bitlings</h2>
-          <span class="chip is-quiet">macOS build &middot; not distributed</span>
-        </div>
-        <p class="thesis">A pixel desktop pet that quietly measures how you use the web, then writes you an honest report about it every morning at nine.</p>
-        <div class="specs">
-          <div><span class="k">Version</span><span class="v">1.7.0</span></div>
-          <div><span class="k">Watched sites</span><span class="v">50</span></div>
-          <div><span class="k">Runtime</span><span class="v">Electron</span></div>
-          <div><span class="k">Art</span><span class="v">Raster canvas</span></div>
-        </div>
-        <p class="detail">A transparent, click&#8209;through Electron window drops a hand&#8209;drawn pixel creature onto your desktop &mdash; draggable, click&#8209;through on empty pixels, position remembered across restarts. Underneath it is a pet&#8209;care loop, a berry&#8209;catching minigame, a shop, four companions and a four&#8209;chapter story. A paired Chrome extension measures foreground time on one approved site at a time.</p>
-        <p class="note">The design constraint I care about most: it never makes anything up. The extension reads focus and visibility, not page content &mdash; no URLs, no titles, no account data. Overlapping tabs get merged so time can't inflate. An optional local Ollama model picks from authored lines under constrained JSON, so it can flavor a report but can't change a number. No observations is labeled "missing evidence," not "zero usage."</p>
-        <div class="links">
-          <span>Signed macOS build &mdash; I can send the .app or demo it live</span>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-head">
-          <h2>SUPER GAMMY 110</h2>
-          <span class="chip is-quiet">Archived &middot; public repo</span>
-        </div>
-        <p class="thesis">A 13,590&#8209;line Java text adventure with a hand&#8209;rolled parser, and six secret playthroughs you unlock by typing the right name.</p>
-        <div class="specs">
-          <div><span class="k">Java</span><span class="v">13,590</span></div>
-          <div><span class="k">Classes</span><span class="v">18</span></div>
-          <div><span class="k">Written by me</span><span class="v">78%</span></div>
-          <div><span class="k">Span</span><span class="v">Oct 25 &ndash; Jun 26</span></div>
-        </div>
-        <p class="detail">Eight months, no framework, and 10,538 of its 13,590 surviving lines are mine by <code>git&nbsp;blame</code> &mdash; the architecture, the world and nearly every system in it. Regex command parser, NPCs with dialogue and quests, combat with player skills and mob skills, equipment, enchantments, chests, locked doors, XP levelling and a boss. Name yourself <code>wizard</code>, <code>jack sparrow</code> or <code>one punch man</code> and the whole run changes.</p>
-        <p class="note">It's the only public codebase here, so it's the one you can actually read. Fair warning: <code>Game.java</code> is 10,474 lines and the TODO list is still sitting in the header comment. I've learned a lot about structure since &mdash; which is most of why I'm showing it.</p>
-        <div class="links">
-          <a href="https://github.com/Dabrier5594/SUPERGAMMY110">github.com/Dabrier5594/SUPERGAMMY110</a>
-        </div>
-      </article>
-
-    </main>
+  <div class="facts">
+    <div>
+      <p class="eyebrow">Interested in</p>
+      <div class="tags">
+        <span>AI</span><span>Agents</span><span>Games</span><span>Design</span><span>User attractiveness</span>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow">Some experience in</p>
+      <div class="tags">
+        <span>Java</span><span>CSS</span><span>HTML</span><span>Python</span><span>+ a few other tools</span>
+      </div>
+    </div>
   </div>
 
-  <section class="closing">
-    <div class="col">
-      <p class="eyebrow">Let's talk</p>
-      <h2>I'd rather show you than tell you.</h2>
-      <p>Send me a message and I'll walk you through any of these live, including the code behind the private ones.</p>
+  <div class="section-head">
+    <h2>Things I've made</h2>
+    <p>Go poke at them &mdash; the first two are live right now.</p>
+  </div>
+
+  <div class="cards">
+
+    <article class="card">
+      <h3>Escape The Website<span class="chip is-live">Live</span></h3>
+      <p class="desc">Browser escape rooms that are built to look like real websites, so you're solving puzzles inside something that feels ordinary.</p>
+      <a class="go" href="https://www.escapethewebsite.com">escapethewebsite.com</a>
+    </article>
+
+    <article class="card">
+      <h3>GREMLIN<span class="chip is-pending">In App Store review</span></h3>
+      <p class="desc">An iPhone app that gets between you and doomscrolling: it hands you a challenge, and your feed stays locked until you've done it.</p>
+      <a class="go" href="https://getgremlin.app">getgremlin.app</a>
+    </article>
+
+    <article class="card">
+      <h3>SUPER GAMMY 110<span class="chip is-quiet">Java &middot; public repo</span></h3>
+      <p class="desc">A text adventure written in Java with a classmate over about eight months &mdash; most of the code in it is mine. This is the one you can actually read.</p>
+      <a class="go" href="https://github.com/Dabrier5594/SUPERGAMMY110">View the code</a>
+    </article>
+
+  </div>
+
+  <div class="wip">
+    <div class="wip-copy">
+      <h3>Bitlings<span class="chip is-quiet">Work in progress</span></h3>
+      <p>A pixel game I'm building for macOS. Not ready to talk about yet &mdash; ask me and I'll show you in person.</p>
     </div>
-    <div class="col">
-      <p class="eyebrow">Reach me</p>
-      <p>
-        <a href="mailto:dashbrier@gmail.com">dashbrier@gmail.com</a><br>
-        <a href="https://github.com/WhileTrueD3V">github.com/WhileTrueD3V</a><br>
-        <a href="https://github.com/Dabrier5594">github.com/Dabrier5594</a>
-      </p>
+    <div class="pets" aria-label="Three pixel characters from Bitlings" role="img">
+      <canvas width="108" height="114" data-pet="moss"></canvas>
+      <canvas width="108" height="114" data-pet="pip"></canvas>
+      <canvas width="108" height="114" data-pet="luna"></canvas>
+    </div>
+  </div>
+
+  <section class="contact">
+    <p class="eyebrow">Get in touch</p>
+    <div class="contact-links">
+      <a href="mailto:dashbrier@gmail.com">dashbrier@gmail.com</a>
+      <a href="https://github.com/WhileTrueD3V">github.com/WhileTrueD3V</a>
     </div>
   </section>
 
 </div>
 
 <script>
+const palettes={dragon:{outline:'#49394f',body:'#799fa0',light:'#e9cf91',shade:'#57757e',cheek:'#d99186'},ember:{outline:'#523d45',body:'#d4a083',light:'#f5d5a2',shade:'#ad7769',cheek:'#e8a098'},moss:{outline:'#28483f',body:'#94c67b',light:'#cbe9a0',shade:'#669e68',cheek:'#e5a091'},pip:{outline:'#593f47',body:'#dd9b65',light:'#ffe2ac',shade:'#b56f53',cheek:'#efa09a'},luna:{outline:'#51466c',body:'#b8a1d5',light:'#e8d9f3',shade:'#8d77b6',cheek:'#e4a1bd'}};
+function rect(c,x,y,w,h,color){c.fillStyle=color;c.fillRect(Math.round(x),Math.round(y),w,h);}
+function sprite(c,id,x,y,scale=1,frame=0,sleeping=false,pose={}){
+ // Integer-grid squash: slightly wider, with the base anchored in place.
+ c.save();const t=Math.max(0,Number.isFinite(pose.elapsed)?pose.elapsed:0);
+ const rhythm=({moss:[710,0],pip:[530,3],luna:[890,5],ember:[610,2],dragon:[770,7]})[id]||[710,0];
+ frame=Math.floor(frame*650/rhythm[0])+rhythm[1];
+ c.translate(Math.round(x),Math.round(y));c.scale(scale,scale);if(pose.direction===-1){c.translate(36,0);c.scale(-1,1);}const p=palettes[id]||palettes.moss;
+ const breathing=(!pose.kind||['idle','rest','sleep'].includes(pose.kind))&&frame%10>=6&&frame%10<=7?1:0;
+ const r=(x,y,w,h,col)=>{const xx=Math.round(17.5+(x-17.5)*(breathing?1.07:1)),right=Math.round(17.5+(x+w-17.5)*(breathing?1.07:1));const yy=Math.round(y+(34-y)/34*breathing),bottom=Math.round(y+h+(34-y-h)/34*breathing);rect(c,xx,yy,right-xx,Math.max(1,bottom-yy),col);};
+ const feeding=!sleeping&&pose.kind==='feed',happy=!sleeping&&['pet','celebrate'].includes(pose.kind);
+ const blink=!pose.portrait&&!sleeping&&(frame%9===7||(pose.kind==='wake'&&t<400));
+ const leafTilt=(happy&&t<1200?Math.floor(t/300)%2:Math.floor(frame/3)%2);
+ if(id==='dragon'){
+  const wing=!sleeping&&frame%9>=6?-1:0,tail=frame%7<3?1:0;
+  // Folded bat wings, ivory horns and an independently curling tail.
+  r(0,11+wing,2,14,p.outline);r(2,13+wing,3,12,p.outline);r(5,16+wing,4,10,p.outline);r(2,15+wing,3,6,p.cheek);r(5,18+wing,3,5,p.shade);
+  r(34,11+wing,2,14,p.outline);r(31,13+wing,3,12,p.outline);r(27,16+wing,4,10,p.outline);r(31,15+wing,3,6,p.cheek);r(28,18+wing,3,5,p.shade);
+  r(5,5,3,4,p.outline);r(7,8,4,5,p.outline);r(5,4,2,4,p.light);r(7,7,2,4,p.light);r(27,5,3,4,p.outline);r(24,8,4,5,p.outline);r(28,4,2,4,p.light);r(26,7,2,4,p.light);r(16,7,3,5,p.outline);r(17,8,1,3,p.light);
+  r(28,28,7,5,p.outline);r(32,25-tail,3,6+tail,p.outline);r(33,24-tail,2,3,p.light);r(29,29,4,2,p.body);
+ }else if(id==='pip'||id==='ember'){
+  const ear=id==='ember'&&frame%11===4?-1:0,tail=id==='pip'?(frame%6<3?-1:1):frame%9===5?-1:0;
+  r(4,6+ear,7,12-ear,p.outline);r(24,6,7,12,p.outline);r(6,8+ear,3,9,p.body);r(26,8,3,9,p.body);
+  r(1,25+tail,9,7,p.outline);r(0,24+tail,6,5,p.light);r(4,26+tail,8,4,p.body);
+ }else if(id==='luna'){
+  const ear=frame%12>=8?1:0;
+  r(7-ear,ear,7,17-ear,p.outline);r(22,2,7,15,p.outline);r(9-ear,2+ear,3,13-ear,p.light);r(24,4,3,11,p.light);r(10-ear,5+ear,2,8,p.cheek);r(25,7,2,6,p.cheek);
+ }else{
+  r(16,4,2,9,p.outline);r(18,2+leafTilt,7,4,p.outline);r(19,2+leafTilt,5,2,'#acc985');r(12,5,5,3,'#619060');
+ }
+ const yb=12;
+ r(8,yb,19,2,p.outline);r(5,yb+2,25,3,p.outline);r(3,yb+5,29,12,p.outline);r(5,yb+17,25,3,p.outline);r(8,yb+20,19,2,p.outline);
+ r(8,yb+2,19,2,p.light);r(6,yb+4,23,12,p.body);r(5,yb+7,25,7,p.body);r(8,yb+16,19,3,p.shade);r(10,yb+4,7,2,p.light);
+ if(id==='dragon'){r(13,27,10,5,p.light);r(16,29,5,1,p.shade);r(16,12,3,2,p.shade);r(14,14,7,2,p.shade);}
+ if(id==='pip'){r(8,yb+11,19,5,p.light);r(12,yb+15,11,3,p.light);}if(id==='ember'){r(14,yb+4,2,3,p.shade);r(19,yb+4,2,3,p.shade);r(5,yb+12,4,1,p.outline);r(27,yb+12,4,1,p.outline);r(5,yb+15,4,1,p.outline);r(27,yb+15,4,1,p.outline);}
+ if(sleeping||blink){r(10,yb+9,4,1,p.outline);r(22,yb+9,4,1,p.outline);}
+ else if(happy||(feeding&&t>900)){for(const ex of [10,22]){r(ex,21,1,1,p.outline);r(ex+1,20,2,1,p.outline);r(ex+3,21,1,1,p.outline);}}
+ else{const gaze=pose.kind==='walk'?1:0;r(11+gaze,yb+7,3,4,p.outline);r(23+gaze,yb+7,3,4,p.outline);r(11+gaze,yb+7,1,1,'#ffffda');r(23+gaze,yb+7,1,1,'#ffffda');}
+ r(8,yb+12,4,2,p.cheek);r(25,yb+12,4,2,p.cheek);
+ // A round berry stays beside the cheek; bites shrink it in place.
+ const chewing=feeding&&t>=350&&t<2300;
+ r(17,24,3,1,p.outline);if(!chewing||Math.floor(t/210)%2===0)r(18,25,1,1,p.outline);
+ if(feeding&&t<1900){
+  const bite=t<800?0:t<1400?1:2,bx=30,by=24;
+  r(bx-2,by+5,5,2,p.outline);r(bx-1,by+5,4,1,p.body);
+  r(bx+1,by-2,3,2,'#79945e');
+  r(bx,by,5-bite,5,'#814659');r(bx-1,by+1,7-bite*2,3,'#d8818c');r(bx,by,2,2,'#f2adb0');
+  if(bite)r(bx+4-bite,by,1,2,'#ffe2ac');
+ }
+ const stride=pose.kind==='walk'?Math.floor(t/300)%4:0;
+ if(id!=='moss'){r(8+(stride===1?1:stride===3?-1:0),34,7,2,p.outline);
+ r(22+(stride===1?-1:stride===3?1:0),34,7,2,p.outline);}
+ if(happy&&t<1600){const hy=9-Math.floor(Math.min(t,1200)/300);r(29,hy,2,2,p.cheek);r(32,hy,2,2,p.cheek);r(30,hy+2,3,2,p.cheek);r(31,hy+4,1,1,p.cheek);}
+ if(pose.kind==='sleep'||sleeping){r(33,5,4,1,p.light);r(35,6,1,1,p.light);r(33,7,4,1,p.light);}
+ c.restore();
+}
+
 (function () {
-  var canvas = document.getElementById("pet");
-  if (!canvas || !canvas.getContext) return;
-  var ctx = canvas.getContext("2d");
+  var nodes = Array.prototype.slice.call(document.querySelectorAll("canvas[data-pet]"));
+  if (!nodes.length || typeof sprite !== "function") return;
 
-  var SPRITE = [
-    "................",
-    ".....oo..oo.....",
-    "....obbo.obbo...",
-    "...obbbbobbbbo..",
-    "...obbbbbbbbbo..",
-    "..obbbbbbbbbbbo.",
-    "..obhbbbbbbbbbo.",
-    "..obbeebbbeebbo.",
-    "..obbeebbbeebbo.",
-    "..obbbbbbbbbbbo.",
-    "..obbbbmmmbbbbo.",
-    "...obbbbbbbbbo..",
-    "...obbbbbbbbbo..",
-    "....oobbbbboo...",
-    "......oo..oo....",
-    "................"
-  ];
+  var pets = nodes.map(function (canvas) {
+    var c = canvas.getContext("2d");
+    c.imageSmoothingEnabled = false;
+    return { canvas: canvas, ctx: c, id: canvas.dataset.pet, scale: canvas.width / 36 };
+  });
 
-  var SCALE = 6;
-  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-  function token(name) {
-    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  function paint(frame, elapsed) {
+    pets.forEach(function (p) {
+      p.ctx.clearRect(0, 0, p.canvas.width, p.canvas.height);
+      sprite(p.ctx, p.id, 4, 2, p.scale, frame, false, { kind: "idle", elapsed: elapsed });
+    });
   }
 
-  function draw(offsetY, blinking) {
-    var palette = {
-      o: token("--ink"),
-      b: token("--accent"),
-      h: token("--accent-2"),
-      e: token("--pix-eye"),
-      m: token("--pix-blush")
-    };
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (var y = 0; y < SPRITE.length; y++) {
-      for (var x = 0; x < SPRITE[y].length; x++) {
-        var ch = SPRITE[y].charAt(x);
-        if (ch === ".") continue;
-        if (blinking && ch === "e") ch = (y === 8) ? "o" : "b";
-        ctx.fillStyle = palette[ch] || palette.b;
-        ctx.fillRect(x * SCALE, (y + offsetY) * SCALE, SCALE, SCALE);
-      }
-    }
-  }
-
-  if (reduce.matches) {
-    draw(0, false);
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    paint(0, 0);
     return;
   }
 
-  var tick = 0;
-  var blinkUntil = -1;
+  var frame = 0;
+  var start = Date.now();
+  paint(frame, 0);
   setInterval(function () {
-    tick++;
-    if (tick > blinkUntil && Math.random() < 0.06) blinkUntil = tick + 1;
-    draw(tick % 2 === 0 ? 0 : 0.34, tick <= blinkUntil);
-  }, 420);
-  draw(0, false);
+    frame++;
+    paint(frame, Date.now() - start);
+  }, 340);
 })();
 </script>
 </body>
