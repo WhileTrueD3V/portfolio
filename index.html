@@ -263,27 +263,6 @@
   .pets { display: flex; gap: 6px; align-items: flex-end; flex: 0 0 auto; }
   .pets canvas { display: block; image-rendering: pixelated; }
 
-  /* ---------- contact ---------- */
-
-  .contact { margin-top: 72px; padding-top: 40px; border-top: 1px solid var(--rule); }
-  .contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 6px;
-    font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
-    font-size: 0.82rem;
-  }
-  .contact-links a {
-    padding: 9px 15px;
-    border: 1px solid var(--rule);
-    border-radius: 6px;
-    background: var(--surface);
-    text-decoration: none;
-    color: var(--ink-2);
-    transition: border-color .15s ease, color .15s ease, transform .15s ease;
-  }
-  .contact-links a:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
 
   @media (max-width: 680px) {
     .facts { grid-template-columns: 1fr; gap: 32px; }
@@ -308,8 +287,7 @@
 
   <section class="note">
     <p>I'm very interested in AI, agents, games, design, and user attractiveness overall. I've been doing a lot of vibe&#8209;coding recently &mdash; you can check out some of my things below.</p>
-    <p>I have some experience in Java, CSS, HTML and Python, along with a few other tools that help me build projects, but I'm looking to learn more and experience the process of making something cool.</p>
-    <p>I'm happy to join any team. Please let me know if you'd be open to that.</p>
+    <p>I have some experience in Java, CSS, HTML and Python, along with a few other tools that help me build projects. More recently I've been focused on vibe&#8209;coding and on getting a real understanding of AI &mdash; and I'm looking to learn more and experience the process of making something cool.</p>
   </section>
 
   <div class="facts">
@@ -357,7 +335,7 @@
   <div class="wip">
     <div class="wip-copy">
       <h3>Bitlings<span class="chip is-quiet">Work in progress</span></h3>
-      <p>A pixel game I'm building for macOS. Not ready to talk about yet &mdash; ask me and I'll show you in person.</p>
+      <p>A pixel game <em>and</em> productivity tool I'm building for macOS &mdash; it's not just a game. Not ready to talk about yet &mdash; ask me and I'll show you in person.</p>
     </div>
     <div class="pets" aria-label="Three pixel characters from Bitlings" role="img">
       <canvas width="108" height="114" data-pet="moss"></canvas>
@@ -366,13 +344,6 @@
     </div>
   </div>
 
-  <section class="contact">
-    <p class="eyebrow">Get in touch</p>
-    <div class="contact-links">
-      <a href="mailto:dashbrier@gmail.com">dashbrier@gmail.com</a>
-      <a href="https://github.com/WhileTrueD3V">github.com/WhileTrueD3V</a>
-    </div>
-  </section>
 
 </div>
 
